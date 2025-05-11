@@ -1,5 +1,4 @@
 <script>
-  import { Hamburger } from 'svelte-hamburgers';
   let isOpen = false;
 
   function toggleMenu() {

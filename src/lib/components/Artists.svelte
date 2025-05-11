@@ -1,29 +1,5 @@
 <script> 
     import { onMount } from 'svelte';
-    import { gsap } from 'gsap';
-    import { Draggable } from 'gsap/Draggable';
-  
-    let draggableBox;
-  
-    onMount(() => {
-      if (typeof window === 'undefined') return;
-  
-      gsap.registerPlugin(Draggable);
-  
-      Draggable.create(draggableBox, {
-        type: 'y',
-        bounds: window,
-        edgeResistance: 0.75,
-        inertia: true,
-        onRelease() {
-          gsap.to(this.target, {
-            duration: 0.5,
-            y: this.endY,
-            ease: 'power2.out',
-          });
-        }
-      });
-    });
   </script>
   
 <div>
