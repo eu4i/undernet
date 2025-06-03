@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="./logo.png" alt="Logo" id="logo"/>
+      </div>
+      <nav class="nav-icons">
+        <img src="./artists.png" alt="Artists" class="icon" data-label="ARTISTS" />
+        <img src="./radio.png" alt="Radio" class="icon" data-label="UN.NET.FM" />
+        <img src="./cd.png" alt="CD" class="icon" data-label="MUSIC" />
+        <img src="./shopping.png" alt="Shopping" class="icon" data-label="MERCH" />
+      </nav>
+      <div id="tooltip" class="tooltip hidden">
+        <img src="./arrow.png" alt="Arrow" />
+        <span id="tooltip-text"></span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="card-container">
+
+        <div id="helenaCard" class="mix-card">
+          <div class="top-bar">
+            <h1 id="helenaTitle" class="title">helena DLX</h1>
+          </div>
+          <div class="tracklist-container">
+            <div class="dots">
+              <span id="helenaDot1" class="dot"><img src="asterisk.png" alt="Asterix" /></span>
+              <span id="helenaDot2" class="dot"><img src="blur.png" alt="Blur" /></span>
+              <span id="helenaDot3" class="dot"><img src="hub.png" alt="Hub" /></span>
+            </div>
+            <div id="helenaTrackBar" class="track-bar">
+              <span class="tracklist-label">EP1</span>
+            </div>
+          </div>
+
+          <!-- Expanded content -->
+          <div class="expanded-content hidden">
+            <div class="description">
+              <p>This is a dreamy electronic set exploring fluid rhythms and experimental textures.</p>
+            </div>
+            <div class="video">
+              <video controls width="100%" height="auto">
+                <source src="helena.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div id="beansclubCard" class="mix-card">
+            <div class="top-bar">
+              <h1 id="beansclubTitle" class="title">beansclub</h1>
+            </div>
+            <div class="tracklist-container">
+              <div class="dots">
+                <span id="beansclubDot1" class="dot"><img src="asterisk.png" alt="Asterix" /></span>
+                <span id="beansclubDot2" class="dot"><img src="blur.png" alt="Blur" /></span>
+                <span id="beansclubDot3" class="dot"><img src="hub.png" alt="Hub" /></span>
+              </div>
+              <div id="beansclubTrackBar" class="track-bar">
+                  <span class="tracklist-label">EP2</span>
+              </div>
+            </div>
+          </div>
+
+                  <div id="enablesecretCard" class="mix-card">
+            <div class="top-bar">
+              <h1 id="enablesecretTitle" class="title">enable secret</h1>
+            </div>
+            <div class="tracklist-container">
+              <div class="dots">
+                <span id="enablesecretDot1" class="dot"><img src="asterisk.png" alt="Asterix" /></span>
+                <span id="enablesecretDot2" class="dot"><img src="blur.png" alt="Blur" /></span>
+                <span id="enablesecretDot3" class="dot"><img src="hub.png" alt="Hub" /></span>
+              </div>
+              <div id="enablesecretTrackBar" class="track-bar">
+                  <span class="tracklist-label">EP3</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
